@@ -24,24 +24,30 @@ $('#backToTop').click(function() {
 });
 
 /* ========================================
-   SMOOTH SCROLL FOR ANCHOR LINKS
+   SMOOTH SCROLL FOR ANCHOR LINKS (Hanya jika elemen ada)
    ========================================= */
 $('a[href*="#"]').on('click', function(e) {
     if (this.hash !== '') {
-        e.preventDefault();
-        var hash = this.hash;
-        
-        // Gunakan animasi smooth scroll
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 70
-        }, 600);
+        // Cek apakah elemen dengan id tersebut ada di halaman
+        var target = $(this.hash);
+        if (target.length) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: target.offset().top - 70
+            }, 600);
+        }
     }
 });
 
 /* ========================================
-   FILTER, SEARCH, DAN SCROLL PRODUK
+   FILTER, SEARCH, DAN SCROLL PRODUK (Hanya jika elemen ada di halaman)
    ========================================= */
 $(document).ready(function() {
+    
+    // Cek apakah elemen produk ada di halaman
+    if ($('#searchInput').length === 0) {
+        return; // Jika tidak ada, hentikan fungsi produk
+    }
     
     // Function to update product count and filter
     function updateDisplay() {
@@ -95,21 +101,24 @@ $(document).ready(function() {
 });
 
 /* ========================================
-   ACTIVE MENU DETECTION (Saat Scroll)
+   ACTIVE MENU DETECTION (Hanya jika section ada)
    ========================================= */
 $(window).on('scroll', function() {
-    var scrollPosition = $(window).scrollTop() + 100; // Offset karena navbar fixed
+    // Cek apakah ada section di halaman
+    var sections = $('section');
+    if (sections.length === 0) {
+        return; // Jika tidak ada section, hentikan
+    }
     
-    // Loop setiap section
-    $('section').each(function() {
+    var scrollPosition = $(window).scrollTop() + 100;
+    
+    sections.each(function() {
         var sectionTop = $(this).offset().top;
         var sectionBottom = sectionTop + $(this).outerHeight();
         var sectionId = $(this).attr('id');
         
         if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-            // Hapus class active dari semua menu
             $('.navbar-nav .nav-link').removeClass('active');
-            // Tambah class active ke menu yang sesuai
             $('.navbar-nav .nav-link[href="#' + sectionId + '"]').addClass('active');
         }
     });
@@ -120,3 +129,45 @@ $(document).ready(function() {
     $(window).trigger('scroll');
 });
 
+/* ========================================
+   COUNTER ANIMATION (Statistik Produk)
+   ========================================= */
+
+function animateCounter(element, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const currentValue = Math.floor(progress * (end - start) + start);
+        element.innerText = currentValue;
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
+
+// Cek apakah elemen counter ada di halaman
+if ($('.counter').length > 0) {
+    // Intersection Observer untuk mendeteksi saat elemen terlihat
+    const observerOptions = {
+        threshold: 0.5, // Muncul ketika 50% elemen terlihat
+        rootMargin: "0px 0px -50px 0px"
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counterElement = entry.target;
+                const targetValue = parseInt(counterElement.getAttribute('data-target'));
+                animateCounter(counterElement, 0, targetValue, 2000); // 2 detik
+                observer.unobserve(counterElement); // Hanya sekali
+            }
+        });
+    }, observerOptions);
+    
+    // Observer setiap elemen counter
+    document.querySelectorAll('.counter').forEach(counter => {
+        observer.observe(counter);
+    });
+}

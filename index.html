@@ -75,6 +75,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#partner">Partner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#keunggulan">Keunggulan</a></li>
                     <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
@@ -137,6 +138,55 @@
         </div>
     </section>
 
+    <!-- ==================== OFFICIAL PARTNER SECTION ==================== -->
+    <section id="partner" class="partner-unique-section">
+        <div class="container">
+            <div class="partner-unique-header" data-aos="fade-up" data-aos-duration="600">
+                <span class="partner-unique-badge">Trusted Partners</span>
+                <h2 class="partner-unique-title">Official <span>Partner</span></h2>
+                <p class="partner-unique-subtitle">Berkolaborasi dengan institusi terpercaya dalam negeri</p>
+            </div>
+            <div class="partner-unique-grid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="partner-unique-item">
+                    <div class="partner-unique-logo">
+                        <img src="images/bnpb.png" alt="BNPB Logo" onerror="this.src='https://placehold.co/80x80?text=BNPB'">
+                    </div>
+                    <div class="partner-unique-info">
+                        <h4>BNPB</h4>
+                        <p>Badan Nasional Penanggulangan Bencana</p>
+                    </div>
+                    <div class="partner-unique-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="partner-unique-item">
+                    <div class="partner-unique-logo">
+                        <img src="images/bpbd.png" alt="BPBD Logo" onerror="this.src='https://placehold.co/80x80?text=BPBD'">
+                    </div>
+                    <div class="partner-unique-info">
+                        <h4>BPBD</h4>
+                        <p>Badan Penanggulangan Bencana Daerah</p>
+                    </div>
+                    <div class="partner-unique-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="partner-unique-item">
+                    <div class="partner-unique-logo">
+                        <img src="images/kemensos.png" alt="Kemensos Logo" onerror="this.src='https://placehold.co/80x80?text=Kemensos'">
+                    </div>
+                    <div class="partner-unique-info">
+                        <h4>Kemensos</h4>
+                        <p>Kementerian Sosial Republik Indonesia</p>
+                    </div>
+                    <div class="partner-unique-check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ==================== KEUNGGULAN DENGAN AOS ==================== -->
     <section id="keunggulan" class="py-5" style="background: white;">
         <div class="container">
@@ -176,236 +226,197 @@
         </div>
     </section>
 
-    <!-- ==================== PRODUK DENGAN AOS ==================== -->
-    <section id="produk" class="py-5" style="background: var(--light-bg);">
+    <!-- ==================== PRODUK SECTION (FULL LAYAR & MENARIK) ==================== -->
+    <section id="produk" class="product-showcase-section">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="600">
                 <h2 class="section-title">Produk <span style="color: var(--primary);">Kami</span></h2>
-                <p class="text-muted mt-3">Berbagai pilihan terpal dan paranet berkualitas</p>
+                <p class="text-muted mt-3">Berbagai pilihan terpal dan paranet berkualitas untuk kebutuhan Anda</p>
             </div>
-
-            <div class="row">
-                <!-- SISI KIRI: Sidebar -->
-                <div class="col-lg-3 mb-4" data-aos="fade-right" data-aos-duration="600" data-aos-delay="100">
-                    <div class="product-sidebar">
-                        <div class="sidebar-search">
-                            <h6 class="sidebar-title"><i class="fas fa-search"></i> Pencarian</h6>
-                            <div class="search-box-sidebar">
-                                <i class="fas fa-search search-icon"></i>
-                                <input type="text" id="searchInput" class="search-input-sidebar" placeholder="Cari produk...">
-                            </div>
-                        </div>
-                        <div class="sidebar-category">
-                            <h6 class="sidebar-title"><i class="fas fa-tags"></i> Kategori Produk</h6>
-                            <div class="category-list">
-                                <button class="category-btn active" data-filter="all">
-                                    <span>SEMUA</span>
-                                    <span class="category-count" id="countAll">7</span>
-                                </button>
-                                <button class="category-btn" data-filter="terpal">
-                                    <span>TERPAL</span>
-                                    <span class="category-count" id="countTerpal">6</span>
-                                </button>
-                                <button class="category-btn" data-filter="paranet">
-                                    <span>PARANET</span>
-                                    <span class="category-count" id="countParanet">1</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="sidebar-info">
-                            <div class="info-box">
-                                <i class="fas fa-box-open"></i>
-                                <span id="productCountInfo">7</span>
-                                <span>produk ditemukan</span>
-                            </div>
-                        </div>
+            
+            <!-- Produk Unggulan Grid -->
+            <div class="product-showcase-grid" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="product-showcase-item">
+                    <div class="product-showcase-image">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="product-showcase-overlay">
+                        <h4>Terpal Premium</h4>
+                        <p>Grade A & A Import</p>
                     </div>
                 </div>
-
-                <!-- SISI KANAN: Daftar Produk Scrollable -->
-                <div class="col-lg-9" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <div class="products-scroll-container" id="productsContainer">
-                        <div class="products-grid-scroll" id="productsGrid">
-                            <!-- Terpal Grade C -->
-                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade c">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Terpal</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-tshirt fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">TERPAL GRADE C</h5>
-                                        <p class="product-desc-scroll">Kualitas standar ekonomis</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade b">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Terpal</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-tshirt fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">TERPAL GRADE B</h5>
-                                        <p class="product-desc-scroll">Kualitas menengah</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade bc">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Terpal</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-tshirt fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">TERPAL GRADE BC</h5>
-                                        <p class="product-desc-scroll">Kualitas medium</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade a">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Terpal</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-tshirt fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">TERPAL GRADE A</h5>
-                                        <p class="product-desc-scroll">Kualitas premium</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade a import">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Terpal</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-tshirt fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">TERPAL GRADE A IMPORT</h5>
-                                        <p class="product-desc-scroll">Kualitas import premium</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item-scroll" data-category="terpal" data-name="terpal stripe c">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Terpal</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-tshirt fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">TERPAL STRIPE C</h5>
-                                        <p class="product-desc-scroll">Model stripe ekonomis</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-item-scroll" data-category="paranet" data-name="paranet">
-                                <div class="product-card-scroll">
-                                    <div class="product-badge-scroll">Paranet</div>
-                                    <div class="product-img-scroll">
-                                        <i class="fas fa-leaf fa-4x"></i>
-                                    </div>
-                                    <div class="product-body-scroll">
-                                        <h5 class="product-title-scroll">PARANET</h5>
-                                        <p class="product-desc-scroll">Pelindung & peneduh optimal</p>
-                                        <a href="#kontak" class="btn-product-scroll">Tanya Harga →</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="product-showcase-item">
+                    <div class="product-showcase-image">
+                        <i class="fas fa-umbrella"></i>
+                    </div>
+                    <div class="product-showcase-overlay">
+                        <h4>Terpal Standar</h4>
+                        <p>Grade B, BC & C</p>
                     </div>
                 </div>
+                <div class="product-showcase-item">
+                    <div class="product-showcase-image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="product-showcase-overlay">
+                        <h4>Paranet</h4>
+                        <p>Pelindung & Peneduh</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistik Produk -->
+            <div class="product-stats" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="product-stat-item">
+                    <div class="product-stat-number">
+                        <span class="counter" data-target="7">0</span>+
+                    </div>
+                    <div class="product-stat-label">Varian Produk</div>
+                </div>
+                <div class="product-stat-item">
+                    <div class="product-stat-number">
+                        <span class="counter" data-target="100">0</span>+
+                    </div>
+                    <div class="product-stat-label">Klien Puas</div>
+                </div>
+                <div class="product-stat-item">
+                    <div class="product-stat-number">
+                        <span class="counter" data-target="24">0</span>/7
+                    </div>
+                    <div class="product-stat-label">Layanan Konsultasi</div>
+                </div>
+            </div>
+            
+            <!-- List Varian Produk -->
+            <!-- <div class="product-variant-list" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+                <h4 class="variant-title">Varian Terpal Tersedia</h4>
+                <div class="variant-tags">
+                    <span class="variant-tag">Terpal Grade C</span>
+                    <span class="variant-tag">Terpal Grade B</span>
+                    <span class="variant-tag">Terpal Grade BC</span>
+                    <span class="variant-tag">Terpal Grade A</span>
+                    <span class="variant-tag">Terpal Grade A Import</span>
+                    <span class="variant-tag">Terpal Stripe C</span>
+                    <span class="variant-tag">Paranet</span>
+                </div>
+            </div> -->
+            
+            <!-- Tombol CTA -->
+            <div class="text-center mt-1" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+                <a href="produk.html" class="btn btn-primary-custom btn-lg">
+                    Lihat Semua Produk <i class="fas fa-arrow-right ml-2"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- ==================== KONTAK DENGAN AOS ==================== -->
-    <section id="kontak" class="py-5" style="background: white;">
+    <!-- ==================== EMAIL & SOSIAL MEDIA (BAGIAN SENDIRI) ==================== -->
+    <section id="kontak" class="contact-section-modern">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="600">
                 <h2 class="section-title">Hubungi <span style="color: var(--primary);">Kami</span></h2>
                 <p class="text-muted mt-3">Siap melayani kebutuhan Anda</p>
             </div>
             
-            <div class="row">
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-building"></i>
-                        </div>
-                        <h5 class="contact-card-title">MARKETING OFFICE</h5>
-                        <p class="contact-card-address">
-                            <i class="fas fa-map-pin"></i> Voza Tower Lantai 12, Jl. Mayjen HR. Muhammad No.31, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189
-                        </p>
+            <!-- Email Card -->
+            <div class="contact-email-wrapper" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="contact-email-card">
+                    <div class="contact-email-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <h5 class="contact-card-title">FACTORY OFFICE</h5>
-                        <p class="contact-card-address">
-                            <i class="fas fa-map-pin"></i> Jasem, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur 61385
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-                    <div class="contact-card">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-warehouse"></i>
-                        </div>
-                        <h5 class="contact-card-title">WAREHOUSE OFFICE</h5>
-                        <p class="contact-card-address">
-                            <i class="fas fa-map-pin"></i> Pergudangan 100 Blok A2 No.20, Kp. Melayu Timur, Kec. Teluknaga, Kabupaten Tangerang, Banten 15510
-                        </p>
+                    <div class="contact-email-content">
+                        <h3 class="contact-email-title">Email Perusahaan</h3>
+                        <a href="mailto:Marketingheshengplastic@gmail.com" class="contact-email-address">
+                            marketingheshengplastic@gmail.com
+                        </a>
+                        <p class="contact-email-desc">Kirimkan pertanyaan atau kebutuhan Anda, kami akan merespon dalam 1x24 jam.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="contact-bottom-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-                        <div class="email-box">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <span class="email-label">Email Perusahaan</span>
-                                <a href="mailto:Marketingheshengplastic@gmail.com" class="email-address">
-                                    marketingheshengplastic@gmail.com
-                                </a>
-                            </div>
+            <!-- Sosial Media Section -->
+            <div class="contact-social-wrapper" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="contact-social-divider">
+                    <span>Atau hubungi kami melalui</span>
+                </div>
+                <div class="contact-social-grid">
+                    <a href="https://www.instagram.com/heshengplastic.co/" target="_blank" class="contact-social-card instagram">
+                        <div class="contact-social-icon">
+                            <i class="fab fa-instagram"></i>
                         </div>
-                    </div>
-                    <div class="col-md-6 text-center text-md-right">
-                        <div class="social-box">
-                            <span class="social-label">Ikuti Kami:</span>
-                            <div class="social-links-modern">
-                                <a href="https://www.instagram.com/heshengplastic.co/" target="_blank" class="social-link instagram">
-                                    <i class="fab fa-instagram"></i>
-                                    <span>Instagram</span>
-                                </a>
-                                <a href="https://www.tiktok.com/@heshengplastic.co" target="_blank" class="social-link tiktok">
-                                    <i class="fab fa-tiktok"></i>
-                                    <span>TikTok</span>
-                                </a>
-                            </div>
+                        <div class="contact-social-info">
+                            <span class="contact-social-name">Instagram</span>
+                            <span class="contact-social-handle">@heshengplastic.co</span>
                         </div>
-                    </div>
+                        <span class="contact-social-arrow">→</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@heshengplastic.co" target="_blank" class="contact-social-card tiktok">
+                        <div class="contact-social-icon">
+                            <i class="fab fa-tiktok"></i>
+                        </div>
+                        <div class="contact-social-info">
+                            <span class="contact-social-name">TikTok</span>
+                            <span class="contact-social-handle">@heshengplastic.co</span>
+                        </div>
+                        <span class="contact-social-arrow">→</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ==================== FOOTER DENGAN 3 ALAMAT ==================== -->
     <footer class="footer">
-        <div class="container text-center">
-            <p class="mb-0">© 2025 PT HESHENG PLASTIC INDUSTRIAL.<br> All Rights Reserved.</p>
+        <div class="container">
+            <!-- 3 Alamat Kantor -->
+            <div class="footer-address-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <h4 class="footer-address-title">
+                    <i class="fas fa-map-marker-alt"></i> Kantor Kami
+                </h4>
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-address-card">
+                            <div class="footer-address-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h5 class="footer-address-heading">MARKETING OFFICE</h5>
+                            <p class="footer-address-text">
+                                Voza Tower Lantai 12, Jl. Mayjen HR. Muhammad No.31, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-address-card">
+                            <div class="footer-address-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h5 class="footer-address-heading">FACTORY OFFICE</h5>
+                            <p class="footer-address-text">
+                                Jasem, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur 61385
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-address-card">
+                            <div class="footer-address-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h5 class="footer-address-heading">WAREHOUSE OFFICE</h5>
+                            <p class="footer-address-text">
+                                Pergudangan 100 Blok A2 No.20, Kp. Melayu Timur, Kec. Teluknaga, Kabupaten Tangerang, Banten 15510
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Border Pemisah -->
+            <div class="footer-divider"></div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p class="mb-0">© 2025 PT HESHENG PLASTIC INDUSTRIAL. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 

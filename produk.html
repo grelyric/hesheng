@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <title>Produk - PT HESHENG PLASTIC INDUSTRIAL</title>
+    <meta name="description" content="Produk terpal dan paranet berkualitas dari PT HESHENG PLASTIC INDUSTRIAL. Tersedia berbagai grade untuk kebutuhan industri, pertanian, dan konstruksi.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="css/aos.css">
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-industry me-2"></i> PT HESHENG
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#tentang">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#partner">Partner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#keunggulan">Keunggulan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO PRODUK (SAMA SEPERTI BERANDA) ==================== -->
+    <section id="home" class="hero" style="min-height: 60vh;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center text-white hero-content">
+                    <h1 style="margin-top: 50px;">Produk Kami</h1>
+                    <div class="tagline">Terpal & Paranet Berkualitas untuk Kebutuhan Anda</div>
+                    <div class="mt-4">
+                        <a href="index.html#kontak" class="btn btn-primary-custom mr-3">📞 Hubungi Kami</a>
+                        <a href="index.html" class="btn btn-outline-custom">Kembali ke Beranda</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRODUK SECTION ==================== -->
+    <section class="py-5" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="row">
+                <!-- SISI KIRI: Sidebar -->
+                <div class="col-lg-3 mb-4">
+                    <div class="product-sidebar">
+                        <div class="sidebar-search">
+                            <h6 class="sidebar-title"><i class="fas fa-search"></i> Pencarian</h6>
+                            <div class="search-box-sidebar">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" id="searchInput" class="search-input-sidebar" placeholder="Cari produk...">
+                            </div>
+                        </div>
+                        <div class="sidebar-category">
+                            <h6 class="sidebar-title"><i class="fas fa-tags"></i> Kategori Produk</h6>
+                            <div class="category-list">
+                                <button class="category-btn active" data-filter="all">
+                                    <span>SEMUA</span>
+                                    <span class="category-count" id="countAll">7</span>
+                                </button>
+                                <button class="category-btn" data-filter="terpal">
+                                    <span>TERPAL</span>
+                                    <span class="category-count" id="countTerpal">6</span>
+                                </button>
+                                <button class="category-btn" data-filter="paranet">
+                                    <span>PARANET</span>
+                                    <span class="category-count" id="countParanet">1</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sidebar-info">
+                            <div class="info-box">
+                                <i class="fas fa-box-open"></i>
+                                <span id="productCountInfo">7</span>
+                                <span>produk ditemukan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SISI KANAN: Daftar Produk Scrollable -->
+                <div class="col-lg-9">
+                    <div class="products-scroll-container" id="productsContainer">
+                        <div class="products-grid-scroll" id="productsGrid">
+                            <!-- Terpal Grade C -->
+                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade c">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Terpal</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-tshirt fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">TERPAL GRADE C</h5>
+                                        <p class="product-desc-scroll">Kualitas standar ekonomis</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Terpal Grade B -->
+                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade b">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Terpal</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-tshirt fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">TERPAL GRADE B</h5>
+                                        <p class="product-desc-scroll">Kualitas menengah</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Terpal Grade BC -->
+                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade bc">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Terpal</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-tshirt fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">TERPAL GRADE BC</h5>
+                                        <p class="product-desc-scroll">Kualitas medium</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Terpal Grade A -->
+                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade a">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Terpal</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-tshirt fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">TERPAL GRADE A</h5>
+                                        <p class="product-desc-scroll">Kualitas premium</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Terpal Grade A Import -->
+                            <div class="product-item-scroll" data-category="terpal" data-name="terpal grade a import">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Terpal</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-tshirt fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">TERPAL GRADE A IMPORT</h5>
+                                        <p class="product-desc-scroll">Kualitas import premium</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Terpal Stripe C -->
+                            <div class="product-item-scroll" data-category="terpal" data-name="terpal stripe c">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Terpal</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-tshirt fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">TERPAL STRIPE C</h5>
+                                        <p class="product-desc-scroll">Model stripe ekonomis</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Paranet -->
+                            <div class="product-item-scroll" data-category="paranet" data-name="paranet">
+                                <div class="product-card-scroll">
+                                    <div class="product-badge-scroll">Paranet</div>
+                                    <div class="product-img-scroll">
+                                        <i class="fas fa-leaf fa-4x"></i>
+                                    </div>
+                                    <div class="product-body-scroll">
+                                        <h5 class="product-title-scroll">PARANET</h5>
+                                        <p class="product-desc-scroll">Pelindung & peneduh optimal</p>
+                                        <a href="index.html#kontak" class="btn-product-scroll">Tanya Harga →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- ==================== FOOTER DENGAN 3 ALAMAT ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <!-- 3 Alamat Kantor -->
+            <div class="footer-address-section" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <h4 class="footer-address-title">
+                    <i class="fas fa-map-marker-alt"></i> Kantor Kami
+                </h4>
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-address-card">
+                            <div class="footer-address-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h5 class="footer-address-heading">MARKETING OFFICE</h5>
+                            <p class="footer-address-text">
+                                Voza Tower Lantai 12, Jl. Mayjen HR. Muhammad No.31, Putat Gede, Kec. Sukomanunggal, Surabaya, Jawa Timur 60189
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-address-card">
+                            <div class="footer-address-icon">
+                                <i class="fas fa-industry"></i>
+                            </div>
+                            <h5 class="footer-address-heading">FACTORY OFFICE</h5>
+                            <p class="footer-address-text">
+                                Jasem, Kec. Ngoro, Kabupaten Mojokerto, Jawa Timur 61385
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="footer-address-card">
+                            <div class="footer-address-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h5 class="footer-address-heading">WAREHOUSE OFFICE</h5>
+                            <p class="footer-address-text">
+                                Pergudangan 100 Blok A2 No.20, Kp. Melayu Timur, Kec. Teluknaga, Kabupaten Tangerang, Banten 15510
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Border Pemisah -->
+            <div class="footer-divider"></div>
+            
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p class="mb-0">© 2025 PT HESHENG PLASTIC INDUSTRIAL. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6281234567890?text=Halo%20PT%20HESHENG,%20saya%20ingin%20menanyakan%20produk%20terpal/paranet" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 100, easing: 'ease-out-cubic' });
+        
+        // Filter dan Search
+        function updateDisplay() {
+            var searchValue = $('#searchInput').val().toLowerCase();
+            var activeFilter = $('.category-btn.active').attr('data-filter');
+            var visibleCount = 0;
+            
+            $('.product-item-scroll').each(function() {
+                var productName = $(this).attr('data-name');
+                var productCategory = $(this).attr('data-category');
+                var matchesSearch = productName.indexOf(searchValue) > -1;
+                var matchesFilter = (activeFilter === 'all' || productCategory === activeFilter);
+                
+                if (matchesSearch && matchesFilter) {
+                    $(this).show();
+                    visibleCount++;
+                } else {
+                    $(this).hide();
+                }
+            });
+            
+            $('#productCountInfo').text(visibleCount);
+            $('#countAll').text($('.product-item-scroll').length);
+            $('#countTerpal').text($('.product-item-scroll[data-category="terpal"]').length);
+            $('#countParanet').text($('.product-item-scroll[data-category="paranet"]').length);
+        }
+        
+        $('#searchInput').on('keyup', function() { updateDisplay(); });
+        $('.category-btn').click(function() {
+            $('.category-btn').removeClass('active');
+            $(this).addClass('active');
+            updateDisplay();
+        });
+        updateDisplay();
+    </script>
+</body>
+</html>
